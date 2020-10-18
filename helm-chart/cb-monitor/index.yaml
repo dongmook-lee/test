@@ -1,41 +1,14 @@
 apiVersion: v1
 entries:
-  prometheus:
-  - apiVersion: v1
-    appVersion: 2.21.0
-    created: "2020-10-18T21:22:30.344277+09:00"
-    dependencies:
-    - condition: kubeStateMetrics.enabled
-      name: kube-state-metrics
-      repository: https://kubernetes-charts.storage.googleapis.com/
-      version: 2.8.*
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: 5.7.*
-    description: Prometheus is a monitoring system and time series database.
-    digest: f23f257c3b9954070ff1340e4bb9d3b587f39c84597f1c0db3d6f064c4749443
-    home: https://prometheus.io/
-    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
-    maintainers:
-    - email: gianrubio@gmail.com
-      name: gianrubio
-    - email: zanhsieh@gmail.com
-      name: zanhsieh
-    - email: miroslav.hadzhiev@gmail.com
-      name: Xtigyro
-    - email: monotek23@gmail.com
-      name: monotek
-    - email: naseem@transit.app
-      name: naseemkullah
-    name: prometheus
-    sources:
-    - https://github.com/prometheus/alertmanager
-    - https://github.com/prometheus/prometheus
-    - https://github.com/prometheus/pushgateway
-    - https://github.com/prometheus/node_exporter
-    - https://github.com/kubernetes/kube-state-metrics
+  cb-monitor:
+  - apiVersion: v2
+    appVersion: v0.2.0-20201018
+    created: "2020-10-18T21:45:44.864479+09:00"
+    description: CB-Monitor Helm chart
+    digest: 71a0803ecdc8596d6f2dee6d779fc7c79ececd649987524b14f3dca2f0f36f2d
+    name: cb-monitor
+    type: application
     urls:
-    - prometheus-11.16.2.tgz
-    version: 11.16.2
-generated: "2020-10-18T21:22:30.33592+09:00"
+    - cb-monitor-0.2.0.tgz
+    version: 0.2.0
+generated: "2020-10-18T21:45:44.848485+09:00"
