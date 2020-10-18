@@ -3,12 +3,12 @@ entries:
   cb-monitor:
   - apiVersion: v2
     appVersion: v0.2.0-20201018
-    created: "2020-10-19T00:15:09.754501+09:00"
+    created: "2020-10-19T00:19:37.748101+09:00"
     description: CB-Monitor Helm chart
-    digest: bdb68d3c2ab8ce0e7d79c709e13ae2ae43e145f6b8a9df04c669735d9a48e22a
+    digest: d8c32cc9f777af17ac10bd98a9d40de33659a90047026e0f1dc45c47183dc42b
     name: cb-monitor
     type: application
     urls:
     - cb-monitor-0.2.0.tgz
     version: 0.2.0
-generated: "2020-10-19T00:15:09.746653+09:00"
+generated: "2020-10-19T00:19:37.740369+09:00"
