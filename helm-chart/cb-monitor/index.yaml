@@ -1,14 +1,42 @@
 apiVersion: v1
 entries:
   cb-monitor:
-  - apiVersion: v2
+  - apiVersion: v1
     appVersion: v0.2.0-20201018
-    created: "2020-10-19T00:35:22.821983+09:00"
+    created: "2020-10-19T00:51:42.021917+09:00"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.8.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 5.7.*
     description: CB-Monitor Helm chart
-    digest: 50c36dac325bcc938a20ca4dc84b8b72992f555bacdfabcfdd813cee9f20d304
+    digest: f246a5aeffd2efab07aee2a9c5e1509caf37c154b27de77ca7ca8239f139bdc0
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: monotek23@gmail.com
+      name: monotek
+    - email: naseem@transit.app
+      name: naseemkullah
     name: cb-monitor
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
     type: application
     urls:
     - cb-monitor-0.2.0.tgz
     version: 0.2.0
-generated: "2020-10-19T00:35:22.81111+09:00"
+generated: "2020-10-19T00:51:42.01345+09:00"
