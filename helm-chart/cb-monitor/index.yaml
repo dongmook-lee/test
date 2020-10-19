@@ -3,7 +3,7 @@ entries:
   cb-monitor:
   - apiVersion: v1
     appVersion: v0.2.0-20201018
-    created: "2020-10-19T18:10:42.597279+09:00"
+    created: "2020-10-19T18:32:37.917922+09:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -14,7 +14,7 @@ entries:
       repository: https://grafana.github.io/helm-charts
       version: 5.7.*
     description: CB-Monitor Helm chart
-    digest: 73d197c9abdf84ede42bda318c560600e1a9ce7fab24132faa344e7e90c634ee
+    digest: d181ad13d412b571d638ed2c04354eb71008f72e3f638bcf0d5658c66973be7a
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     maintainers:
@@ -39,4 +39,4 @@ entries:
     urls:
     - cb-monitor-0.2.0.tgz
     version: 0.2.0
-generated: "2020-10-19T18:10:42.589492+09:00"
+generated: "2020-10-19T18:32:37.90976+09:00"
